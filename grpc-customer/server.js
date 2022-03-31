@@ -11,9 +11,11 @@ server.addService(customerPackage.CustomerService.service,
         "createCustomer": createCustomer,
         "readCustomers": readCustomers
     });
+console.log("Server starting on port 40000");
 server.start();
 
 const customers = [];
+
 function createCustomer(call, callback) {
     console.log(call);
     const newCustomer = {
@@ -26,5 +28,6 @@ function createCustomer(call, callback) {
 }
 
 function readCustomers(call, callback) {
+    console.log(call);
     callback(null, {"customers": customers});
 }

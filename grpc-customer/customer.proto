@@ -2,12 +2,9 @@ syntax="proto3";
 
 package customerPackage;
 
-
 service CustomerService {
-
     rpc createCustomer(Customer) returns (Customer);
     rpc readCustomers(ReadCustomersParams) returns (Customers);
-
 }
 
 message Customer {
@@ -21,3 +18,4 @@ message Customers {
 }
 
 message ReadCustomersParams {}
+
