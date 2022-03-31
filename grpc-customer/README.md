@@ -37,7 +37,8 @@ Start the server
 
     /usr/bin/node ./server.js
 
-
+Use Postman to make a gRPC request
+![postman gRPC request](./gRPC-request-postman.png)
 
 
 # Links
