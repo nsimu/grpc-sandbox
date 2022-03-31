@@ -26,5 +26,5 @@ function createCustomer(call, callback) {
 }
 
 function readCustomers(call, callback) {
-
+    callback(null, {"customers": customers});
 }
