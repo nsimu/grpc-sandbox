@@ -1,0 +1,23 @@
+syntax="proto3";
+
+package customerPackage;
+
+
+service CustomerService {
+
+    rpc createCustomer(Customer) returns (Customer);
+    rpc readCustomers(ReadCustomersParams) returns (Customers);
+
+}
+
+message Customer {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+}
+
+message Customers {
+    repeated Customer customers = 1;
+}
+
+message ReadCustomersParams {}
